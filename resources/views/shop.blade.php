@@ -4,30 +4,6 @@
 
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-			<div class="panel-body">
-				<form method="post" action="/cart/add">
-					<input class="form-control" type="text" name="product_id" value="293ad"><br>
-					<label>Product Name</label><br>
-					<input class="form-control" type="text" name="product_name" value="Zuri Animation"><br>
-					<label>Amount</label><br>
-					<input class="form-control" type="number" name="quantity" value="2"><br>
-					<label>Price</label><br>
-					<input class="form-control" type="tel" name="price" value="2000"><br>
-					<button class="btn btn-primary" type="submit" name="collo">Add to cart</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-@if(count($vim)>0)
-
-
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
 			<h3>MY PRODUCTS</h3>
 		</div>
 		<div class="col-md-12">
@@ -44,7 +20,7 @@
 
    	<tbody>
 
-   		<?php foreach($vim as $row) :?>
+   		<?php foreach(Cart::content() as $row) :?>
 
        		<tr>
            		<td>
@@ -54,11 +30,6 @@
            		<td><input type="text" value="<?php echo $row->qty; ?>"></td>
            		<td>$<?php echo $row->price; ?></td>
            		<td>$<?php echo $row->total; ?></td>
-           		<td><form action="/cart/remove" method="post">
-    <input type="hidden" name="id" value="{{{ $row->rowId }}}">
-	<button class="btn btn-primary">Remove</button>
-</form>
-</td>
        		</tr>
 
 	   	<?php endforeach;?>
@@ -81,15 +52,10 @@
    			<td>Total</td>
    			<td><?php echo Cart::total(); ?></td>
    		</tr>
-
    	</tfoot>
 </table>
 		</div>
 	</div>
 </div>
-
-@else
-@endif
-
 
 @endsection

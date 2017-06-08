@@ -12,3 +12,7 @@
 */
 
 Route::get('/','ShopperController@index');
+Route::get('/home','ShopperController@index');
+Route::get('/shop','ShopperController@get');
+Route::post('/cart/add','ShopperController@add');
+Route::post('/cart/remove','ShopperController@remove')->name('delete_from_cart');
