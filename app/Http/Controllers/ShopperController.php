@@ -31,7 +31,8 @@ class ShopperController extends Controller
     // GEt the products in the cart
     public function get()
     {
-    	return view('shop');
+        $vim = Cart::content();
+    	return view('shop',['vim'=>$vim]);
     }
     //Add a product
     public function add()
