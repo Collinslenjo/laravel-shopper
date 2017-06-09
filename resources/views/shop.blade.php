@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="row">
+<div class="row rower">
 	<div class="col-md-6 col-md-offset-3">
-			<h3>MY PRODUCTS</h3>
+			<h3>MY CART</h3>
 		</div>
 		<div class="col-md-12">
-			// Display the content in a View.
+			<!--  Display the content in a View. -->
 <table>
    	<thead>
        	<tr>

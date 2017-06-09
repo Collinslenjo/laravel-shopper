@@ -17,32 +17,8 @@ body {
   color: #6394F8;
 }
 
-nav {
-  padding: 20px 0 40px 0;
-  background: #F8F8F8;
-  font-size: 16px;
-}
-nav .navbar-left {
-  float: left;
-}
-nav .navbar-right {
-  float: right;
-}
-nav ul li {
-  display: inline;
-  padding-left: 20px;
-}
-nav ul li a {
-  color: #777777;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: black;
-}
-
-.container {
+.containee {
   margin: auto;
-  width: 80%;
 }
 
 .badge {
@@ -59,7 +35,6 @@ nav ul li a:hover {
 }
 
 .shopping-cart {
-  margin: 20px 0;
   float: right;
   background: white;
   width: 320px;
@@ -132,9 +107,16 @@ nav ul li a:hover {
 .button:hover {
   background: #729ef9;
 }
+.clearfix{
+  list-style-type: none;
+}
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.rower{
+    width: 100%;
 }

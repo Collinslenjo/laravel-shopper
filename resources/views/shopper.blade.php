@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="row">
+<div class="row rower">
 	<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
 				<form method="post" action="/cart/add">
