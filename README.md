@@ -1,2 +1,5 @@
 # laravel-shopper
-An ecommerce Web shop
+An Ecommerce Web shop
+
+> Add to Cart
+> Checkout
