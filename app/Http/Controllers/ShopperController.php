@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 use Cart;
 use App\shoppingcart;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+
 
 class ShopperController extends Controller
 {
@@ -51,4 +51,14 @@ class ShopperController extends Controller
     }
     //Delete a product
     public function destroy(){}
+    //Categories
+    public function category()
+    {
+        //This is where the categories will be handled
+    }
+    //Checkout
+    public function checkout()
+    {
+        //My checkout controller method
+    }
 }
